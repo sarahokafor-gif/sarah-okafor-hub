@@ -1,4 +1,5 @@
 import './App.css'
+import BailiiRssFeed from './components/BailiiRssFeed'
 
 // SVG Icons as components
 const FileStackIcon = () => (
@@ -47,6 +48,7 @@ function App() {
           <a href="/" className="header-logo">Chambers of Sarah Okafor</a>
           <nav className="header-nav">
             <a href="#tools">Tools</a>
+            <a href="#resources">Resources</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -139,6 +141,20 @@ function App() {
               <ArrowRightIcon />
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Legal Resources Section */}
+      <section id="resources" className="resources-section">
+        <div className="section-header">
+          <h2>Legal Resources</h2>
+          <p>
+            Stay up to date with the latest case law from UK courts and tribunals.
+          </p>
+        </div>
+
+        <div className="resources-content">
+          <BailiiRssFeed />
         </div>
       </section>
 

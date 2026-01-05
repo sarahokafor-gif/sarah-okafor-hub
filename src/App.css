@@ -253,6 +253,17 @@
   background: var(--color-gray-400);
 }
 
+/* Resources Section */
+.resources-section {
+  padding: var(--spacing-3xl) var(--spacing-xl);
+  background: var(--color-gray-50);
+}
+
+.resources-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* About Section */
 .about-section {
   padding: var(--spacing-3xl) var(--spacing-xl);
