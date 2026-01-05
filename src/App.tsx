@@ -144,22 +144,36 @@ function App() {
       <section id="about" className="about-section">
         <div className="about-content">
           <h2>About</h2>
-          <p>
-            I'm Sarah Okafor, a barrister practising in England and Wales. I was called to
-            the Bar in 2001. I practise in various areas of law including advising local
-            authority and private clients in areas of chancery and Court of Protection work
-            for adults. I previously practised as a qualified and registered social worker
-            with vulnerable adults and families.
-          </p>
-          <p>
-            These free tools are born from my own experience of the administrative challenges
-            legal professionals face daily. I believe technology should make legal practice
-            more accessible and efficient for everyone.
-          </p>
-          <p>
-            All tools process data locally in your browser. Your documents never leave your
-            device, ensuring complete confidentiality.
-          </p>
+          <div className="about-layout">
+            <div className="about-photo">
+              <img
+                src="/sarah-profile.jpg"
+                alt="Sarah Okafor, Barrister"
+                onError={(e) => {
+                  // Hide image container if photo not found
+                  (e.target as HTMLImageElement).parentElement!.style.display = 'none'
+                }}
+              />
+            </div>
+            <div className="about-text">
+              <p>
+                I'm Sarah Okafor, a barrister practising in England and Wales. I was called to
+                the Bar in 2001. I practise in various areas of law including advising local
+                authority and private clients in areas of chancery and Court of Protection work
+                for adults. I previously practised as a qualified and registered social worker
+                with vulnerable adults and families.
+              </p>
+              <p>
+                These free tools are born from my own experience of the administrative challenges
+                legal professionals face daily. I believe technology should make legal practice
+                more accessible and efficient for everyone.
+              </p>
+              <p>
+                All tools process data locally in your browser. Your documents never leave your
+                device, ensuring complete confidentiality.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
