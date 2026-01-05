@@ -56,10 +56,12 @@ function App() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <span className="hero-badge">Free Legal Technology</span>
+          <span className="hero-badge">Free Tools - Registration Required</span>
           <h1>Chambers of Sarah Okafor</h1>
           <p className="hero-subtitle">
-            Empowering legal professionals with free, powerful tools to streamline their practice
+            Free tools for anyone navigating formal processes - whether you're a legal professional,
+            representing yourself in court, responding to a complaint, or preparing documents
+            for any official matter that's important to you.
           </p>
           <a href="#tools" className="hero-cta">
             Explore Free Tools
@@ -71,10 +73,10 @@ function App() {
       {/* Tools Section */}
       <section id="tools" className="tools-section">
         <div className="section-header">
-          <h2>Free Legal Tools</h2>
+          <h2>Free Tools</h2>
           <p>
-            Professional-grade tools built by a barrister, for legal professionals.
-            No subscriptions, no hidden fees.
+            Professional-grade tools for courts, tribunals, complaints, and formal documentation.
+            Free to use with registration. No subscriptions, no hidden fees.
           </p>
         </div>
 
@@ -164,9 +166,10 @@ function App() {
                 with vulnerable adults and families.
               </p>
               <p>
-                These free tools are born from my own experience of the administrative challenges
-                legal professionals face daily. I believe technology should make legal practice
-                more accessible and efficient for everyone.
+                These tools are born from my experience of how important clear, well-organised
+                documentation is when navigating formal processes. Whether you're a solicitor,
+                a litigant in person, someone responding to a workplace grievance, or a student
+                learning advocacy - everyone deserves access to professional-quality tools.
               </p>
               <p>
                 All tools process data locally in your browser. Your documents never leave your
