@@ -259,9 +259,18 @@
   background: var(--color-gray-50);
 }
 
-.resources-content {
-  max-width: 800px;
+.resources-grid {
+  max-width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xl);
+}
+
+@media (max-width: 900px) {
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* About Section */

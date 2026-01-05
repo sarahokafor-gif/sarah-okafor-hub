@@ -1,5 +1,6 @@
 import './App.css'
 import BailiiRssFeed from './components/BailiiRssFeed'
+import FindCaseLawFeed from './components/FindCaseLawFeed'
 
 // SVG Icons as components
 const FileStackIcon = () => (
@@ -153,8 +154,9 @@ function App() {
           </p>
         </div>
 
-        <div className="resources-content">
+        <div className="resources-grid">
           <BailiiRssFeed />
+          <FindCaseLawFeed />
         </div>
       </section>
 
