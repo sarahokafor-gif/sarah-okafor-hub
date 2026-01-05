@@ -145,9 +145,11 @@ function App() {
         <div className="about-content">
           <h2>About</h2>
           <p>
-            I'm Sarah Okafor, a barrister practising in England and Wales. I practise in
-            various areas of law including advising local authority and private clients in
-            areas of chancery and Court of Protection work for adults.
+            I'm Sarah Okafor, a barrister practising in England and Wales. I was called to
+            the Bar in 2001. I practise in various areas of law including advising local
+            authority and private clients in areas of chancery and Court of Protection work
+            for adults. I previously practised as a qualified and registered social worker
+            with vulnerable adults and families.
           </p>
           <p>
             These free tools are born from my own experience of the administrative challenges
