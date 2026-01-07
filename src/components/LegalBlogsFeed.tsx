@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './BailiiRssFeed.css'
+import './LegalBlogsFeed.css'
 
 interface FeedItem {
   title: string
@@ -14,15 +14,14 @@ interface FeedConfig {
 }
 
 const FEEDS: FeedConfig[] = [
-  { name: 'Court of Protection', code: 'EWCOP', url: 'https://www.bailii.org/rss/recent-accessions-ew_cases_EWCOP.rss' },
-  { name: 'Court of Appeal (Civil)', code: 'EWCA Civ', url: 'https://www.bailii.org/rss/recent-accessions-ew_cases_EWCA_Civ.rss' },
-  { name: 'UK Supreme Court', code: 'UKSC', url: 'https://www.bailii.org/rss/recent-accessions-uk_cases_UKSC.rss' },
+  { name: 'Nearly Legal (Housing)', code: 'Housing', url: 'https://nearlylegal.co.uk/feed/' },
+  { name: 'Pink Tape (Family)', code: 'Pink', url: 'https://pinktape.co.uk/feed/' },
+  { name: 'Transparency Project', code: 'Transp', url: 'https://www.transparencyproject.org.uk/feed/' },
 ]
 
-// Using rss2json.com as a CORS proxy to convert RSS to JSON
 const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url='
 
-export default function BailiiRssFeed() {
+export default function LegalBlogsFeed() {
   const [selectedFeed, setSelectedFeed] = useState<FeedConfig>(FEEDS[0])
   const [items, setItems] = useState<FeedItem[]>([])
   const [loading, setLoading] = useState(true)
@@ -70,23 +69,25 @@ export default function BailiiRssFeed() {
   }
 
   return (
-    <div className="bailii-feed">
-      <div className="feed-header">
+    <div className="blogs-feed">
+      <div className="feed-header blogs-header">
         <div className="feed-title">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M4 11a9 9 0 0 1 9 9"/>
-            <path d="M4 4a16 16 0 0 1 16 16"/>
-            <circle cx="5" cy="19" r="1"/>
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            <line x1="8" y1="6" x2="16" y2="6"/>
+            <line x1="8" y1="10" x2="16" y2="10"/>
+            <line x1="8" y1="14" x2="12" y2="14"/>
           </svg>
-          <h3>Latest Cases from BAILII</h3>
+          <h3>Legal Blogs</h3>
         </div>
         <a
-          href="https://www.bailii.org"
+          href="https://nearlylegal.co.uk"
           target="_blank"
           rel="noopener noreferrer"
-          className="bailii-link"
+          className="blogs-link"
         >
-          Visit BAILII
+          Nearly Legal
         </a>
       </div>
 
@@ -108,21 +109,21 @@ export default function BailiiRssFeed() {
         {loading && (
           <div className="feed-loading">
             <div className="spinner"></div>
-            <p>Loading cases...</p>
+            <p>Loading posts...</p>
           </div>
         )}
 
         {error && (
           <div className="feed-error">
             <p>{error}</p>
-            <a href={selectedFeed.url} target="_blank" rel="noopener noreferrer">
-              View feed directly on BAILII
+            <a href="https://nearlylegal.co.uk" target="_blank" rel="noopener noreferrer">
+              Visit Nearly Legal directly
             </a>
           </div>
         )}
 
         {!loading && !error && items.length === 0 && (
-          <p className="feed-empty">No recent cases available</p>
+          <p className="feed-empty">No recent posts available</p>
         )}
 
         {!loading && !error && items.length > 0 && (
@@ -139,10 +140,9 @@ export default function BailiiRssFeed() {
         )}
       </div>
 
-      <div className="feed-footer">
+      <div className="feed-footer blogs-footer">
         <p>
-          Data provided by <a href="https://www.bailii.org" target="_blank" rel="noopener noreferrer">BAILII</a> -
-          British and Irish Legal Information Institute
+          Expert commentary from leading legal practitioners
         </p>
       </div>
     </div>

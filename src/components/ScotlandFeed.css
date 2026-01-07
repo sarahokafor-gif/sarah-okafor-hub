@@ -1,0 +1,173 @@
+.scotland-feed {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.scotland-header {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scotland-header .feed-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scotland-header .feed-title svg {
+  width: 24px;
+  height: 24px;
+}
+
+.scotland-header .feed-title h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.scotland-link {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.scotland-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.scotland-feed .feed-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.scotland-feed .feed-tab {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  background: white;
+  color: #495057;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.scotland-feed .feed-tab:hover {
+  border-color: #1e40af;
+  color: #1e40af;
+}
+
+.scotland-feed .feed-tab.active {
+  background: #1e40af;
+  border-color: #1e40af;
+  color: white;
+}
+
+.scotland-feed .feed-subtitle {
+  padding: 0.75rem 1.25rem 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.scotland-feed .feed-content {
+  padding: 1rem 1.25rem;
+  min-height: 200px;
+}
+
+.scotland-feed .feed-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #6c757d;
+}
+
+.scotland-feed .spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #e9ecef;
+  border-top-color: #1e40af;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 0.75rem;
+}
+
+.scotland-feed .feed-error {
+  text-align: center;
+  padding: 1.5rem;
+  color: #dc3545;
+}
+
+.scotland-feed .feed-error a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #1e40af;
+}
+
+.scotland-feed .feed-empty {
+  text-align: center;
+  color: #6c757d;
+  padding: 2rem;
+}
+
+.scotland-feed .feed-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scotland-feed .feed-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f3f4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.scotland-feed .feed-item:last-child {
+  border-bottom: none;
+}
+
+.scotland-feed .feed-item a {
+  color: #212529;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  transition: color 0.2s;
+}
+
+.scotland-feed .feed-item a:hover {
+  color: #1e40af;
+}
+
+.scotland-feed .feed-date {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.scotland-footer {
+  background: #f8f9fa;
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.scotland-footer p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #6c757d;
+}

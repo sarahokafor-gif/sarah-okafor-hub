@@ -1,0 +1,208 @@
+.judiciary-feed {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-gray-200);
+  overflow: hidden;
+}
+
+.judiciary-header {
+  background: #8b1538 !important; /* Judiciary burgundy/maroon */
+}
+
+.judiciary-link {
+  color: var(--color-white);
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.9;
+  transition: opacity var(--transition-fast);
+}
+
+.judiciary-link:hover {
+  opacity: 1;
+}
+
+.judiciary-feed .feed-tab.active {
+  background: #8b1538;
+  border-color: #8b1538;
+}
+
+.judiciary-feed .feed-tab:hover {
+  border-color: #8b1538;
+  color: #8b1538;
+}
+
+.judiciary-feed .feed-item a:hover {
+  color: #8b1538;
+}
+
+.judiciary-footer a {
+  color: #8b1538;
+}
+
+/* Reuse common feed styles */
+.judiciary-feed .feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-lg) var(--spacing-xl);
+  color: var(--color-white);
+}
+
+.judiciary-feed .feed-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.judiciary-feed .feed-title svg {
+  width: 24px;
+  height: 24px;
+}
+
+.judiciary-feed .feed-title h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.judiciary-feed .feed-selector {
+  display: flex;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-gray-50);
+  border-bottom: 1px solid var(--color-gray-200);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.judiciary-feed .feed-tab {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  color: var(--color-gray-600);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.judiciary-feed .feed-subtitle {
+  margin: 0;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-size: 0.85rem;
+  color: var(--color-gray-500);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.judiciary-feed .feed-content {
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.judiciary-feed .feed-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-2xl);
+  gap: var(--spacing-md);
+  color: var(--color-gray-500);
+}
+
+.judiciary-feed .spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--color-gray-200);
+  border-top-color: #8b1538;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.judiciary-feed .feed-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-2xl);
+  gap: var(--spacing-sm);
+  color: var(--color-gray-500);
+  text-align: center;
+}
+
+.judiciary-feed .feed-error a {
+  color: #8b1538;
+  font-size: 0.9rem;
+}
+
+.judiciary-feed .feed-empty {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-gray-500);
+}
+
+.judiciary-feed .feed-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.judiciary-feed .feed-item {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--color-gray-100);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.judiciary-feed .feed-item:last-child {
+  border-bottom: none;
+}
+
+.judiciary-feed .feed-item:hover {
+  background: var(--color-gray-50);
+}
+
+.judiciary-feed .feed-item a {
+  color: var(--color-gray-800);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  transition: color var(--transition-fast);
+}
+
+.judiciary-feed .feed-date {
+  font-size: 0.75rem;
+  color: var(--color-gray-400);
+}
+
+.judiciary-feed .feed-footer {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-gray-50);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.judiciary-feed .feed-footer p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--color-gray-500);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .judiciary-feed .feed-header {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  .judiciary-feed .feed-selector {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .judiciary-feed .feed-tab {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.75rem;
+  }
+}

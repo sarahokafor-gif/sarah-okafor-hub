@@ -1,0 +1,173 @@
+.immigration-feed {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.immigration-header {
+  background: linear-gradient(135deg, #7c2d12 0%, #c2410c 100%);
+  color: white;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.immigration-header .feed-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.immigration-header .feed-title svg {
+  width: 24px;
+  height: 24px;
+}
+
+.immigration-header .feed-title h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.immigration-link {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.immigration-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.immigration-feed .feed-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.immigration-feed .feed-tab {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  background: white;
+  color: #495057;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.immigration-feed .feed-tab:hover {
+  border-color: #c2410c;
+  color: #c2410c;
+}
+
+.immigration-feed .feed-tab.active {
+  background: #c2410c;
+  border-color: #c2410c;
+  color: white;
+}
+
+.immigration-feed .feed-subtitle {
+  padding: 0.75rem 1.25rem 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.immigration-feed .feed-content {
+  padding: 1rem 1.25rem;
+  min-height: 200px;
+}
+
+.immigration-feed .feed-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #6c757d;
+}
+
+.immigration-feed .spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #e9ecef;
+  border-top-color: #c2410c;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 0.75rem;
+}
+
+.immigration-feed .feed-error {
+  text-align: center;
+  padding: 1.5rem;
+  color: #dc3545;
+}
+
+.immigration-feed .feed-error a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #c2410c;
+}
+
+.immigration-feed .feed-empty {
+  text-align: center;
+  color: #6c757d;
+  padding: 2rem;
+}
+
+.immigration-feed .feed-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.immigration-feed .feed-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f3f4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.immigration-feed .feed-item:last-child {
+  border-bottom: none;
+}
+
+.immigration-feed .feed-item a {
+  color: #212529;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  transition: color 0.2s;
+}
+
+.immigration-feed .feed-item a:hover {
+  color: #c2410c;
+}
+
+.immigration-feed .feed-date {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.immigration-footer {
+  background: #f8f9fa;
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.immigration-footer p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #6c757d;
+}

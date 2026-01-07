@@ -1,0 +1,362 @@
+/* Practice Area Page Styles */
+
+.practice-area-page {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.practice-header {
+  padding: 3rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.practice-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.practice-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Header color themes */
+.cop-header { background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%); }
+.asc-header { background: linear-gradient(135deg, #2d5a3d 0%, #4a8c5f 100%); }
+.private-header { background: linear-gradient(135deg, #5a3d2d 0%, #8c6b4a 100%); }
+.family-header { background: linear-gradient(135deg, #5a2d4a 0%, #8c4a7a 100%); }
+.immigration-header { background: linear-gradient(135deg, #3d2d5a 0%, #6b4a8c 100%); }
+.public-header { background: linear-gradient(135deg, #2d4a5a 0%, #4a7a8c 100%); }
+.professional-header { background: linear-gradient(135deg, #4a4a4a 0%, #6a6a6a 100%); }
+.legislation-header { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d4a 100%); }
+.chancery-header { background: linear-gradient(135deg, #4a3d2d 0%, #7a6b4a 100%); }
+
+.practice-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Feed Section */
+.feed-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.feed-section h2 {
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.feed-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.feed-tab {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #d0d0d0;
+  background: #f5f5f5;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.feed-tab:hover {
+  background: #e8e8e8;
+}
+
+.feed-tab.active {
+  background: #1e3a5f;
+  color: white;
+  border-color: #1e3a5f;
+}
+
+.feed-source {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.feed-content {
+  min-height: 200px;
+}
+
+.feed-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #e0e0e0;
+  border-top-color: #1e3a5f;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.feed-error {
+  padding: 1rem;
+  background: #fff3f3;
+  border-radius: 8px;
+  color: #c53030;
+  text-align: center;
+}
+
+.feed-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feed-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.feed-item:last-child {
+  border-bottom: none;
+}
+
+.feed-item a {
+  color: #1e3a5f;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.feed-item a:hover {
+  text-decoration: underline;
+}
+
+.feed-date {
+  font-size: 0.8rem;
+  color: #888;
+  white-space: nowrap;
+}
+
+/* Resources Grid */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.resource-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.resource-section h2 {
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.resource-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.resource-list li:last-child {
+  border-bottom: none;
+}
+
+.resource-list a {
+  color: #1e3a5f;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  transition: color 0.2s;
+}
+
+.resource-list a:hover {
+  color: #2d5a87;
+  text-decoration: underline;
+}
+
+/* Legislation Section */
+.legislation-section {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.legislation-section h2 {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.legislation-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.legislation-links a {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.legislation-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Multiple Feed Sections */
+.feeds-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Featured Resources */
+.featured-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.featured-section h2 {
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.featured-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
+}
+
+.featured-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.featured-card h3 {
+  font-size: 1rem;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.featured-card p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Info Box */
+.info-box {
+  background: #e8f4f8;
+  border-left: 4px solid #1e3a5f;
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 2rem;
+}
+
+.info-box h3 {
+  font-size: 1rem;
+  color: #1e3a5f;
+  margin-bottom: 0.5rem;
+}
+
+.info-box p {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .practice-header {
+    padding: 2rem 1rem;
+  }
+
+  .practice-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .practice-header p {
+    font-size: 0.95rem;
+  }
+
+  .practice-content {
+    padding: 1rem;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feeds-row {
+    grid-template-columns: 1fr;
+  }
+
+  .feed-item {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .feed-date {
+    align-self: flex-start;
+  }
+}

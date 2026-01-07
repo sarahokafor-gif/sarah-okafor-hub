@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './BailiiRssFeed.css'
+import './ScotlandFeed.css'
 
 interface FeedItem {
   title: string
@@ -14,15 +14,14 @@ interface FeedConfig {
 }
 
 const FEEDS: FeedConfig[] = [
-  { name: 'Court of Protection', code: 'EWCOP', url: 'https://www.bailii.org/rss/recent-accessions-ew_cases_EWCOP.rss' },
-  { name: 'Court of Appeal (Civil)', code: 'EWCA Civ', url: 'https://www.bailii.org/rss/recent-accessions-ew_cases_EWCA_Civ.rss' },
-  { name: 'UK Supreme Court', code: 'UKSC', url: 'https://www.bailii.org/rss/recent-accessions-uk_cases_UKSC.rss' },
+  { name: 'Scottish Legal News', code: 'SLN', url: 'https://www.scottishlegal.com/feed' },
+  { name: 'Law Society of Scotland', code: 'LSS', url: 'https://www.lawscot.org.uk/news/feed/' },
+  { name: 'Scottish Government News', code: 'SG', url: 'https://www.gov.scot/feeds/news/' },
 ]
 
-// Using rss2json.com as a CORS proxy to convert RSS to JSON
 const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url='
 
-export default function BailiiRssFeed() {
+export default function ScotlandFeed() {
   const [selectedFeed, setSelectedFeed] = useState<FeedConfig>(FEEDS[0])
   const [items, setItems] = useState<FeedItem[]>([])
   const [loading, setLoading] = useState(true)
@@ -70,23 +69,22 @@ export default function BailiiRssFeed() {
   }
 
   return (
-    <div className="bailii-feed">
-      <div className="feed-header">
+    <div className="scotland-feed">
+      <div className="feed-header scotland-header">
         <div className="feed-title">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M4 11a9 9 0 0 1 9 9"/>
-            <path d="M4 4a16 16 0 0 1 16 16"/>
-            <circle cx="5" cy="19" r="1"/>
+            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+            <line x1="4" y1="22" x2="4" y2="15"/>
           </svg>
-          <h3>Latest Cases from BAILII</h3>
+          <h3>Scotland</h3>
         </div>
         <a
-          href="https://www.bailii.org"
+          href="https://www.scottishlegal.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="bailii-link"
+          className="scotland-link"
         >
-          Visit BAILII
+          Scottish Legal
         </a>
       </div>
 
@@ -108,21 +106,21 @@ export default function BailiiRssFeed() {
         {loading && (
           <div className="feed-loading">
             <div className="spinner"></div>
-            <p>Loading cases...</p>
+            <p>Loading updates...</p>
           </div>
         )}
 
         {error && (
           <div className="feed-error">
             <p>{error}</p>
-            <a href={selectedFeed.url} target="_blank" rel="noopener noreferrer">
-              View feed directly on BAILII
+            <a href="https://www.scottishlegal.com" target="_blank" rel="noopener noreferrer">
+              Visit Scottish Legal News directly
             </a>
           </div>
         )}
 
         {!loading && !error && items.length === 0 && (
-          <p className="feed-empty">No recent cases available</p>
+          <p className="feed-empty">No recent updates available</p>
         )}
 
         {!loading && !error && items.length > 0 && (
@@ -139,10 +137,9 @@ export default function BailiiRssFeed() {
         )}
       </div>
 
-      <div className="feed-footer">
+      <div className="feed-footer scotland-footer">
         <p>
-          Data provided by <a href="https://www.bailii.org" target="_blank" rel="noopener noreferrer">BAILII</a> -
-          British and Irish Legal Information Institute
+          Scottish legal resources, courts, and legislation
         </p>
       </div>
     </div>

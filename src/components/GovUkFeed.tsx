@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './BailiiRssFeed.css'
+import './GovUkFeed.css'
 
 interface FeedItem {
   title: string
@@ -14,15 +14,14 @@ interface FeedConfig {
 }
 
 const FEEDS: FeedConfig[] = [
-  { name: 'Court of Protection', code: 'EWCOP', url: 'https://www.bailii.org/rss/recent-accessions-ew_cases_EWCOP.rss' },
-  { name: 'Court of Appeal (Civil)', code: 'EWCA Civ', url: 'https://www.bailii.org/rss/recent-accessions-ew_cases_EWCA_Civ.rss' },
-  { name: 'UK Supreme Court', code: 'UKSC', url: 'https://www.bailii.org/rss/recent-accessions-uk_cases_UKSC.rss' },
+  { name: 'Ministry of Justice', code: 'MoJ', url: 'https://www.gov.uk/government/organisations/ministry-of-justice.atom' },
+  { name: 'HM Courts & Tribunals', code: 'HMCTS', url: 'https://www.gov.uk/government/organisations/hm-courts-and-tribunals-service.atom' },
+  { name: 'Legal Aid Agency', code: 'LAA', url: 'https://www.gov.uk/government/organisations/legal-aid-agency.atom' },
 ]
 
-// Using rss2json.com as a CORS proxy to convert RSS to JSON
 const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url='
 
-export default function BailiiRssFeed() {
+export default function GovUkFeed() {
   const [selectedFeed, setSelectedFeed] = useState<FeedConfig>(FEEDS[0])
   const [items, setItems] = useState<FeedItem[]>([])
   const [loading, setLoading] = useState(true)
@@ -70,23 +69,24 @@ export default function BailiiRssFeed() {
   }
 
   return (
-    <div className="bailii-feed">
-      <div className="feed-header">
+    <div className="govuk-feed">
+      <div className="feed-header govuk-header">
         <div className="feed-title">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M4 11a9 9 0 0 1 9 9"/>
-            <path d="M4 4a16 16 0 0 1 16 16"/>
-            <circle cx="5" cy="19" r="1"/>
+            <path d="M2 20h20"/>
+            <path d="M5 20V8h3v12"/>
+            <path d="M10 20V4h4v16"/>
+            <path d="M16 20V8h3v12"/>
           </svg>
-          <h3>Latest Cases from BAILII</h3>
+          <h3>GOV.UK</h3>
         </div>
         <a
-          href="https://www.bailii.org"
+          href="https://www.gov.uk"
           target="_blank"
           rel="noopener noreferrer"
-          className="bailii-link"
+          className="govuk-link"
         >
-          Visit BAILII
+          Visit GOV.UK
         </a>
       </div>
 
@@ -108,21 +108,21 @@ export default function BailiiRssFeed() {
         {loading && (
           <div className="feed-loading">
             <div className="spinner"></div>
-            <p>Loading cases...</p>
+            <p>Loading updates...</p>
           </div>
         )}
 
         {error && (
           <div className="feed-error">
             <p>{error}</p>
-            <a href={selectedFeed.url} target="_blank" rel="noopener noreferrer">
-              View feed directly on BAILII
+            <a href="https://www.gov.uk" target="_blank" rel="noopener noreferrer">
+              Browse directly on GOV.UK
             </a>
           </div>
         )}
 
         {!loading && !error && items.length === 0 && (
-          <p className="feed-empty">No recent cases available</p>
+          <p className="feed-empty">No recent updates available</p>
         )}
 
         {!loading && !error && items.length > 0 && (
@@ -139,10 +139,10 @@ export default function BailiiRssFeed() {
         )}
       </div>
 
-      <div className="feed-footer">
+      <div className="feed-footer govuk-footer">
         <p>
-          Data provided by <a href="https://www.bailii.org" target="_blank" rel="noopener noreferrer">BAILII</a> -
-          British and Irish Legal Information Institute
+          Updates from <a href="https://www.gov.uk" target="_blank" rel="noopener noreferrer">GOV.UK</a> -
+          UK Government
         </p>
       </div>
     </div>

@@ -16,12 +16,9 @@ interface FeedConfig {
 const BASE_URL = 'https://caselaw.nationalarchives.gov.uk/atom.xml'
 
 const FEEDS: FeedConfig[] = [
+  { name: 'Court of Protection', code: 'EWCOP', url: `${BASE_URL}?court=ewcop&order=-date&per_page=10` },
   { name: 'UK Supreme Court', code: 'UKSC', url: `${BASE_URL}?court=uksc&order=-date&per_page=10` },
   { name: 'Court of Appeal', code: 'EWCA', url: `${BASE_URL}?court=ewca&order=-date&per_page=10` },
-  { name: 'High Court (Chancery)', code: 'Ch', url: `${BASE_URL}?court=ewhc/ch&order=-date&per_page=10` },
-  { name: 'High Court (Family)', code: 'Fam', url: `${BASE_URL}?court=ewhc/fam&order=-date&per_page=10` },
-  { name: 'High Court (Admin)', code: 'Admin', url: `${BASE_URL}?court=ewhc/admin&order=-date&per_page=10` },
-  { name: 'Employment Appeal', code: 'EAT', url: `${BASE_URL}?tribunal=eat&order=-date&per_page=10` },
 ]
 
 // Using rss2json.com as a CORS proxy to convert Atom to JSON

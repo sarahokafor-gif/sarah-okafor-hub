@@ -1,0 +1,208 @@
+.govuk-feed {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-gray-200);
+  overflow: hidden;
+}
+
+.govuk-header {
+  background: #0b0c0c !important; /* GOV.UK black */
+}
+
+.govuk-link {
+  color: var(--color-white);
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.9;
+  transition: opacity var(--transition-fast);
+}
+
+.govuk-link:hover {
+  opacity: 1;
+}
+
+.govuk-feed .feed-tab.active {
+  background: #1d70b8; /* GOV.UK blue */
+  border-color: #1d70b8;
+}
+
+.govuk-feed .feed-tab:hover {
+  border-color: #1d70b8;
+  color: #1d70b8;
+}
+
+.govuk-feed .feed-item a:hover {
+  color: #1d70b8;
+}
+
+.govuk-footer a {
+  color: #1d70b8;
+}
+
+/* Reuse common feed styles */
+.govuk-feed .feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-lg) var(--spacing-xl);
+  color: var(--color-white);
+}
+
+.govuk-feed .feed-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.govuk-feed .feed-title svg {
+  width: 24px;
+  height: 24px;
+}
+
+.govuk-feed .feed-title h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.govuk-feed .feed-selector {
+  display: flex;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-gray-50);
+  border-bottom: 1px solid var(--color-gray-200);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.govuk-feed .feed-tab {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  color: var(--color-gray-600);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.govuk-feed .feed-subtitle {
+  margin: 0;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-size: 0.85rem;
+  color: var(--color-gray-500);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.govuk-feed .feed-content {
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.govuk-feed .feed-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-2xl);
+  gap: var(--spacing-md);
+  color: var(--color-gray-500);
+}
+
+.govuk-feed .spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--color-gray-200);
+  border-top-color: #1d70b8;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.govuk-feed .feed-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-2xl);
+  gap: var(--spacing-sm);
+  color: var(--color-gray-500);
+  text-align: center;
+}
+
+.govuk-feed .feed-error a {
+  color: #1d70b8;
+  font-size: 0.9rem;
+}
+
+.govuk-feed .feed-empty {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-gray-500);
+}
+
+.govuk-feed .feed-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.govuk-feed .feed-item {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--color-gray-100);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.govuk-feed .feed-item:last-child {
+  border-bottom: none;
+}
+
+.govuk-feed .feed-item:hover {
+  background: var(--color-gray-50);
+}
+
+.govuk-feed .feed-item a {
+  color: var(--color-gray-800);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  transition: color var(--transition-fast);
+}
+
+.govuk-feed .feed-date {
+  font-size: 0.75rem;
+  color: var(--color-gray-400);
+}
+
+.govuk-feed .feed-footer {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-gray-50);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.govuk-feed .feed-footer p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--color-gray-500);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .govuk-feed .feed-header {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  .govuk-feed .feed-selector {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .govuk-feed .feed-tab {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.75rem;
+  }
+}
