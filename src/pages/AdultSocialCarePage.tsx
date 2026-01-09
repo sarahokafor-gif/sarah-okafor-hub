@@ -20,9 +20,9 @@ const CASE_LAW_FEEDS: FeedConfig[] = [
 ]
 
 const NEWS_FEEDS: FeedConfig[] = [
-  { name: 'Community Care', code: 'CommCare', url: 'https://www.communitycare.co.uk/feed/' },
-  { name: 'Local Government Lawyer', code: 'LGL', url: 'https://www.localgovernmentlawyer.co.uk/feed/' },
+  { name: 'SCIE News', code: 'SCIE', url: 'https://www.scie.org.uk/feed' },
   { name: 'UK Human Rights Blog', code: 'UKHR', url: 'https://ukhumanrightsblog.com/feed/' },
+  { name: 'Public Law Project', code: 'PLP', url: 'https://publiclawproject.org.uk/feed/' },
 ]
 
 const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url='

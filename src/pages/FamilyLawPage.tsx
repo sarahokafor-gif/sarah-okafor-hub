@@ -22,7 +22,7 @@ const CASE_LAW_FEEDS: FeedConfig[] = [
 const NEWS_FEEDS: FeedConfig[] = [
   { name: 'Pink Tape', code: 'Pink', url: 'https://pinktape.co.uk/feed/' },
   { name: 'Transparency Project', code: 'Transp', url: 'https://www.transparencyproject.org.uk/feed/' },
-  { name: 'Family Law Week', code: 'FLW', url: 'https://www.familylawweek.co.uk/site.aspx?i=ed144742' },
+  { name: 'Judiciary UK', code: 'Judiciary', url: 'https://www.judiciary.uk/feed/' },
 ]
 
 const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url='
