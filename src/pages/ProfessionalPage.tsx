@@ -20,7 +20,7 @@ const CASE_LAW_FEEDS: FeedConfig[] = [
 ]
 
 const NEWS_FEEDS: FeedConfig[] = [
-  { name: 'Law Society Gazette', code: 'Gazette', url: 'https://www.lawgazette.co.uk/feed' },
+  { name: 'The Lawyer', code: 'Lawyer', url: 'https://www.thelawyer.com/feed/' },
   { name: 'Legal Futures', code: 'Futures', url: 'https://www.legalfutures.co.uk/feed' },
   { name: 'Legal Cheek', code: 'Cheek', url: 'https://www.legalcheek.com/feed/' },
 ]
