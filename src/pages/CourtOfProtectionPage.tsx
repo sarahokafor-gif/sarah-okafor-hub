@@ -27,7 +27,6 @@ const RESOURCES = {
     { name: 'Court of Protection Rules 2017', url: 'https://www.legislation.gov.uk/uksi/2017/1035/contents' },
     { name: 'Practice Direction 9E - CoP', url: 'https://www.judiciary.uk/guidance-and-resources/court-of-protection-practice-directions/' },
     { name: 'COPDOL11 Guidance', url: 'https://www.gov.uk/government/publications/apply-to-the-court-of-protection-form-copdol11' },
-    { name: '39 Essex Chambers MCA Newsletter', url: 'https://www.39essex.com/information-hub/mental-capacity-law-hub' },
   ],
   forms: [
     { name: 'COP1 - Application Form', url: 'https://www.gov.uk/government/publications/apply-to-the-court-of-protection-form-cop1' },
@@ -44,7 +43,6 @@ const RESOURCES = {
     { name: 'Legal Aid Agency', url: 'https://www.gov.uk/government/organisations/legal-aid-agency' },
   ],
   learning: [
-    { name: '39 Essex Chambers Resources', url: 'https://www.39essex.com/information-hub/mental-capacity-law-hub' },
     { name: 'Mental Capacity Law & Policy', url: 'https://www.mentalcapacitylawandpolicy.org.uk/' },
     { name: 'Court of Protection Handbook', url: 'https://www.lawsociety.org.uk/topics/private-client/court-of-protection' },
     { name: 'Edge Training - MCA Courses', url: 'https://www.edgetraining.org.uk/' },
