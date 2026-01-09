@@ -15,7 +15,7 @@ interface FeedConfig {
 
 const CASE_LAW_FEEDS: FeedConfig[] = [
   { name: 'Family Division (EWHC)', code: 'EWHC', url: 'https://www.bailii.org/rss/recent-accessions-ew_cases_EWHC_Fam.rss' },
-  { name: 'Family Court (EWFC)', code: 'EWFC', url: 'https://www.bailii.org/rss/recent-accessions-ew_cases_EWFC.rss' },
+  { name: 'Family Court (HCJ)', code: 'EWFC', url: 'https://www.bailii.org/rss/recent-accessions-ew_cases_EWFC_HCJ.rss' },
   { name: 'Court of Appeal', code: 'EWCA', url: 'https://www.bailii.org/rss/recent-accessions-ew_cases_EWCA_Civ.rss' },
 ]
 
