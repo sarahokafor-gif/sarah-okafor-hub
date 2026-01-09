@@ -20,7 +20,7 @@ const CASE_LAW_FEEDS: FeedConfig[] = [
 ]
 
 const NEWS_FEEDS: FeedConfig[] = [
-  { name: 'The Lawyer', code: 'Lawyer', url: 'https://www.thelawyer.com/feed/' },
+  { name: 'Judiciary UK', code: 'Judiciary', url: 'https://www.judiciary.uk/feed/' },
   { name: 'Legal Futures', code: 'Futures', url: 'https://www.legalfutures.co.uk/feed' },
   { name: 'Legal Cheek', code: 'Cheek', url: 'https://www.legalcheek.com/feed/' },
 ]
