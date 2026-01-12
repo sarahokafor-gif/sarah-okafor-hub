@@ -19,6 +19,12 @@ const CASE_LAW_FEEDS: FeedConfig[] = [
   { name: 'Court of Appeal', code: 'EWCA', url: 'https://www.bailii.org/rss/recent-accessions-ew_cases_EWCA_Civ.rss' },
 ]
 
+const NEWS_FEEDS: FeedConfig[] = [
+  { name: 'Mental Capacity Law & Policy', code: 'MCLP', url: 'https://www.mentalcapacitylawandpolicy.org.uk/feed/' },
+  { name: 'UK Human Rights Blog', code: 'UKHR', url: 'https://ukhumanrightsblog.com/feed/' },
+  { name: 'Public Law Project', code: 'PLP', url: 'https://publiclawproject.org.uk/feed/' },
+]
+
 const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url='
 
 const RESOURCES = {
@@ -50,38 +56,51 @@ const RESOURCES = {
 }
 
 export default function CourtOfProtectionPage() {
-  const [selectedFeed, setSelectedFeed] = useState<FeedConfig>(CASE_LAW_FEEDS[0])
-  const [items, setItems] = useState<FeedItem[]>([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
+  const [caseFeed, setCaseFeed] = useState<FeedConfig>(CASE_LAW_FEEDS[0])
+  const [caseItems, setCaseItems] = useState<FeedItem[]>([])
+  const [caseLoading, setCaseLoading] = useState(true)
+  const [caseError, setCaseError] = useState<string | null>(null)
+
+  const [newsFeed, setNewsFeed] = useState<FeedConfig>(NEWS_FEEDS[0])
+  const [newsItems, setNewsItems] = useState<FeedItem[]>([])
+  const [newsLoading, setNewsLoading] = useState(true)
+  const [newsError, setNewsError] = useState<string | null>(null)
 
   useEffect(() => {
     const fetchFeed = async () => {
-      setLoading(true)
-      setError(null)
-
+      setCaseLoading(true)
+      setCaseError(null)
       try {
-        const response = await fetch(RSS2JSON_API + encodeURIComponent(selectedFeed.url))
+        const response = await fetch(RSS2JSON_API + encodeURIComponent(caseFeed.url))
         const data = await response.json()
-
         if (data.status === 'ok' && data.items) {
-          setItems(data.items.slice(0, 10).map((item: any) => ({
-            title: item.title,
-            link: item.link,
-            pubDate: item.pubDate
+          setCaseItems(data.items.slice(0, 8).map((item: any) => ({
+            title: item.title, link: item.link, pubDate: item.pubDate
           })))
-        } else {
-          setError('Unable to load feed')
-        }
-      } catch (err) {
-        setError('Unable to load feed')
-      } finally {
-        setLoading(false)
-      }
+        } else { setCaseError('Unable to load') }
+      } catch { setCaseError('Unable to load') }
+      finally { setCaseLoading(false) }
     }
-
     fetchFeed()
-  }, [selectedFeed])
+  }, [caseFeed])
+
+  useEffect(() => {
+    const fetchFeed = async () => {
+      setNewsLoading(true)
+      setNewsError(null)
+      try {
+        const response = await fetch(RSS2JSON_API + encodeURIComponent(newsFeed.url))
+        const data = await response.json()
+        if (data.status === 'ok' && data.items) {
+          setNewsItems(data.items.slice(0, 8).map((item: any) => ({
+            title: item.title, link: item.link, pubDate: item.pubDate
+          })))
+        } else { setNewsError('Unable to load') }
+      } catch { setNewsError('Unable to load') }
+      finally { setNewsLoading(false) }
+    }
+    fetchFeed()
+  }, [newsFeed])
 
   const formatDate = (dateStr: string) => {
     try {
@@ -100,37 +119,59 @@ export default function CourtOfProtectionPage() {
       </header>
 
       <div className="practice-content">
-        {/* Case Law Feed */}
-        <section className="feed-section">
-          <h2>Latest Case Law</h2>
-          <div className="feed-tabs">
-            {CASE_LAW_FEEDS.map((feed) => (
-              <button
-                key={feed.code}
-                className={`feed-tab ${selectedFeed.code === feed.code ? 'active' : ''}`}
-                onClick={() => setSelectedFeed(feed)}
-              >
-                {feed.code}
-              </button>
-            ))}
-          </div>
-          <p className="feed-source">{selectedFeed.name}</p>
+        <div className="feeds-row">
+          <section className="feed-section">
+            <h2>Case Law</h2>
+            <div className="feed-tabs">
+              {CASE_LAW_FEEDS.map((feed) => (
+                <button key={feed.code} className={`feed-tab ${caseFeed.code === feed.code ? 'active' : ''}`} onClick={() => setCaseFeed(feed)}>
+                  {feed.code}
+                </button>
+              ))}
+            </div>
+            <p className="feed-source">{caseFeed.name}</p>
+            <div className="feed-content">
+              {caseLoading && <div className="feed-loading"><div className="spinner"></div><p>Loading...</p></div>}
+              {caseError && <div className="feed-error"><p>{caseError}</p></div>}
+              {!caseLoading && !caseError && caseItems.length > 0 && (
+                <ul className="feed-list">
+                  {caseItems.map((item, index) => (
+                    <li key={index} className="feed-item">
+                      <a href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a>
+                      <span className="feed-date">{formatDate(item.pubDate)}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </section>
 
-          <div className="feed-content">
-            {loading && <div className="feed-loading"><div className="spinner"></div><p>Loading cases...</p></div>}
-            {error && <div className="feed-error"><p>{error}</p></div>}
-            {!loading && !error && items.length > 0 && (
-              <ul className="feed-list">
-                {items.map((item, index) => (
-                  <li key={index} className="feed-item">
-                    <a href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a>
-                    <span className="feed-date">{formatDate(item.pubDate)}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        </section>
+          <section className="feed-section">
+            <h2>News & Commentary</h2>
+            <div className="feed-tabs">
+              {NEWS_FEEDS.map((feed) => (
+                <button key={feed.code} className={`feed-tab ${newsFeed.code === feed.code ? 'active' : ''}`} onClick={() => setNewsFeed(feed)}>
+                  {feed.code}
+                </button>
+              ))}
+            </div>
+            <p className="feed-source">{newsFeed.name}</p>
+            <div className="feed-content">
+              {newsLoading && <div className="feed-loading"><div className="spinner"></div><p>Loading...</p></div>}
+              {newsError && <div className="feed-error"><p>{newsError}</p></div>}
+              {!newsLoading && !newsError && newsItems.length > 0 && (
+                <ul className="feed-list">
+                  {newsItems.map((item, index) => (
+                    <li key={index} className="feed-item">
+                      <a href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a>
+                      <span className="feed-date">{formatDate(item.pubDate)}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </section>
+        </div>
 
         {/* Resources Grid */}
         <div className="resources-grid">
