@@ -21,7 +21,7 @@ const CASE_LAW_FEEDS: FeedConfig[] = [
 
 const NEWS_FEEDS: FeedConfig[] = [
   { name: 'Office of the Public Guardian', code: 'OPG', url: 'https://www.gov.uk/government/organisations/office-of-the-public-guardian.atom' },
-  { name: 'Ministry of Justice', code: 'MoJ', url: 'https://www.gov.uk/government/organisations/ministry-of-justice.atom' },
+  { name: 'Care Quality Commission', code: 'CQC', url: 'https://www.gov.uk/government/organisations/care-quality-commission.atom' },
   { name: 'Judiciary UK', code: 'Judiciary', url: 'https://www.judiciary.uk/feed/' },
 ]
 

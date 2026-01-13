@@ -22,7 +22,7 @@ const CASE_LAW_FEEDS: FeedConfig[] = [
 const NEWS_FEEDS: FeedConfig[] = [
   { name: 'UK Visas & Immigration', code: 'UKVI', url: 'https://www.gov.uk/government/organisations/uk-visas-and-immigration.atom' },
   { name: 'Home Office', code: 'HO', url: 'https://www.gov.uk/government/organisations/home-office.atom' },
-  { name: 'Judiciary UK', code: 'Judiciary', url: 'https://www.judiciary.uk/feed/' },
+  { name: 'Equality & Human Rights Commission', code: 'EHRC', url: 'https://www.gov.uk/government/organisations/equality-and-human-rights-commission.atom' },
 ]
 
 const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url='

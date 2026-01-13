@@ -21,7 +21,7 @@ const CASE_LAW_FEEDS: FeedConfig[] = [
 
 const NEWS_FEEDS: FeedConfig[] = [
   { name: 'Ministry of Justice', code: 'MoJ', url: 'https://www.gov.uk/government/organisations/ministry-of-justice.atom' },
-  { name: 'HMCTS', code: 'HMCTS', url: 'https://www.gov.uk/government/organisations/hm-courts-and-tribunals-service.atom' },
+  { name: 'Equality & Human Rights Commission', code: 'EHRC', url: 'https://www.gov.uk/government/organisations/equality-and-human-rights-commission.atom' },
   { name: 'Judiciary UK', code: 'Judiciary', url: 'https://www.judiciary.uk/feed/' },
 ]
 
