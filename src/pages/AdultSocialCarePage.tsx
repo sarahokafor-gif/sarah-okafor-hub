@@ -20,9 +20,9 @@ const CASE_LAW_FEEDS: FeedConfig[] = [
 ]
 
 const NEWS_FEEDS: FeedConfig[] = [
-  { name: 'SCIE News', code: 'SCIE', url: 'https://www.scie.org.uk/feed' },
-  { name: 'UK Human Rights Blog', code: 'UKHR', url: 'https://ukhumanrightsblog.com/feed/' },
-  { name: 'Public Law Project', code: 'PLP', url: 'https://publiclawproject.org.uk/feed/' },
+  { name: 'Dept of Health & Social Care', code: 'DHSC', url: 'https://www.gov.uk/government/organisations/department-of-health-and-social-care.atom' },
+  { name: 'Ministry of Justice', code: 'MoJ', url: 'https://www.gov.uk/government/organisations/ministry-of-justice.atom' },
+  { name: 'Judiciary UK', code: 'Judiciary', url: 'https://www.judiciary.uk/feed/' },
 ]
 
 const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url='

@@ -20,9 +20,9 @@ const CASE_LAW_FEEDS: FeedConfig[] = [
 ]
 
 const NEWS_FEEDS: FeedConfig[] = [
-  { name: 'Pink Tape', code: 'Pink', url: 'https://pinktape.co.uk/feed/' },
-  { name: 'Transparency Project', code: 'Transp', url: 'https://www.transparencyproject.org.uk/feed/' },
   { name: 'Judiciary UK', code: 'Judiciary', url: 'https://www.judiciary.uk/feed/' },
+  { name: 'Ministry of Justice', code: 'MoJ', url: 'https://www.gov.uk/government/organisations/ministry-of-justice.atom' },
+  { name: 'Legal Aid Agency', code: 'LAA', url: 'https://www.gov.uk/government/organisations/legal-aid-agency.atom' },
 ]
 
 const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url='

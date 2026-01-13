@@ -20,9 +20,9 @@ const CASE_LAW_FEEDS: FeedConfig[] = [
 ]
 
 const NEWS_FEEDS: FeedConfig[] = [
-  { name: 'Free Movement', code: 'FreeMvmt', url: 'https://freemovement.org.uk/feed/' },
-  { name: 'Right to Remain', code: 'R2R', url: 'https://righttoremain.org.uk/feed/' },
-  { name: 'UK Human Rights Blog', code: 'UKHR', url: 'https://ukhumanrightsblog.com/feed/' },
+  { name: 'UK Visas & Immigration', code: 'UKVI', url: 'https://www.gov.uk/government/organisations/uk-visas-and-immigration.atom' },
+  { name: 'Home Office', code: 'HO', url: 'https://www.gov.uk/government/organisations/home-office.atom' },
+  { name: 'Judiciary UK', code: 'Judiciary', url: 'https://www.judiciary.uk/feed/' },
 ]
 
 const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url='

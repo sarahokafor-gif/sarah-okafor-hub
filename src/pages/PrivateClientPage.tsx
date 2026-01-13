@@ -20,9 +20,9 @@ const CASE_LAW_FEEDS: FeedConfig[] = [
 ]
 
 const NEWS_FEEDS: FeedConfig[] = [
-  { name: 'Judiciary UK', code: 'Judiciary', url: 'https://www.judiciary.uk/feed/' },
-  { name: 'Mental Capacity Law & Policy', code: 'MCLP', url: 'https://www.mentalcapacitylawandpolicy.org.uk/feed/' },
-  { name: 'UK Human Rights Blog', code: 'UKHR', url: 'https://ukhumanrightsblog.com/feed/' },
+  { name: 'Office of the Public Guardian', code: 'OPG', url: 'https://www.gov.uk/government/organisations/office-of-the-public-guardian.atom' },
+  { name: 'HMRC', code: 'HMRC', url: 'https://www.gov.uk/government/organisations/hm-revenue-customs.atom' },
+  { name: 'Law Commission', code: 'LawCom', url: 'https://www.lawcom.gov.uk/feed/' },
 ]
 
 const RSS2JSON_API = 'https://api.rss2json.com/v1/api.json?rss_url='
