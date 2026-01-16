@@ -82,12 +82,10 @@ const RESOURCES = {
     { name: 'Charging Guidance', url: 'https://www.gov.uk/government/publications/care-act-statutory-guidance/care-and-support-statutory-guidance#charging-and-financial-assessment', desc: 'Charging for care and support' },
   ],
   courses: [
-    { name: 'Open University - Social Work', url: 'https://www.open.ac.uk/courses/social-work', desc: 'Social work qualifications' },
+    { name: 'Social Work England CPD', url: 'https://www.socialworkengland.org.uk/cpd/', desc: 'Continuing professional development' },
     { name: 'SCIE Learning', url: 'https://www.scie.org.uk/e-learning', desc: 'Free e-learning resources' },
     { name: 'Skills for Care Learning', url: 'https://www.skillsforcare.org.uk/Learning-development/', desc: 'Workforce learning programmes' },
-    { name: 'Research in Practice Learning', url: 'https://www.researchinpractice.org.uk/all/content-pages/learning/', desc: 'Evidence-based learning' },
-    { name: 'Edge Training', url: 'https://www.edgetraining.org.uk/', desc: 'MCA and DoLS training' },
-    { name: 'Bond Solon', url: 'https://www.bondsolon.com/', desc: 'Legal training for experts' },
+    { name: 'Open University - Social Work', url: 'https://www.open.ac.uk/courses/social-work', desc: 'Social work qualifications' },
   ],
 }
 

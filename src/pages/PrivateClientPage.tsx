@@ -51,9 +51,8 @@ const RESOURCES = {
   bodies: [
     { name: 'STEP - Society of Trust & Estate Practitioners', url: 'https://www.step.org/' },
     { name: 'Law Society Private Client Section', url: 'https://www.lawsociety.org.uk/topics/private-client' },
-    { name: 'Chancery Bar Association', url: 'https://www.chba.org.uk/' },
-    { name: 'ACTAPS', url: 'https://www.actaps.com/' },
-    { name: 'SFE (Solicitors for the Elderly)', url: 'https://sfe.legal/' },
+    { name: 'HMCTS Probate', url: 'https://www.gov.uk/government/organisations/hm-courts-and-tribunals-service' },
+    { name: 'Charity Commission', url: 'https://www.gov.uk/government/organisations/charity-commission' },
   ],
   opg: [
     { name: 'Office of the Public Guardian', url: 'https://www.gov.uk/government/organisations/office-of-the-public-guardian' },

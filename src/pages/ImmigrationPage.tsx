@@ -41,11 +41,10 @@ const RESOURCES = {
     { name: 'Local Authority Duties', url: 'https://www.nrpfnetwork.org.uk/information-and-resources/rights-and-entitlements/local-authority-duties' },
   ],
   humanRights: [
-    { name: 'Liberty', url: 'https://www.libertyhumanrights.org.uk/' },
-    { name: 'Amnesty International UK', url: 'https://www.amnesty.org.uk/' },
-    { name: 'UK Human Rights Blog', url: 'https://ukhumanrightsblog.com/' },
-    { name: 'ECHR Portal', url: 'https://www.echr.coe.int/Pages/home.aspx?p=caselaw' },
     { name: 'Equality & Human Rights Commission', url: 'https://www.equalityhumanrights.com/' },
+    { name: 'ECHR Case Law Portal', url: 'https://hudoc.echr.coe.int/' },
+    { name: 'UN Human Rights (OHCHR)', url: 'https://www.ohchr.org/' },
+    { name: 'Council of Europe', url: 'https://www.coe.int/en/web/human-rights-convention' },
   ],
   bodies: [
     { name: 'ILPA - Immigration Law Practitioners\' Assoc', url: 'https://ilpa.org.uk/' },
@@ -137,21 +136,21 @@ export default function ImmigrationPage() {
         <section className="featured-section">
           <h2>Key Resources</h2>
           <div className="featured-grid">
-            <a href="https://freemovement.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>Free Movement</h3>
-              <p>Leading immigration law blog and resources</p>
+            <a href="https://www.gov.uk/browse/visas-immigration" target="_blank" rel="noopener noreferrer" className="featured-card">
+              <h3>GOV.UK Immigration</h3>
+              <p>Official UK government immigration guidance</p>
             </a>
             <a href="https://www.nrpfnetwork.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
               <h3>NRPF Network</h3>
               <p>No Recourse to Public Funds guidance for LAs</p>
             </a>
-            <a href="https://ilpa.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>ILPA</h3>
-              <p>Immigration Law Practitioners' Association</p>
+            <a href="https://www.gov.uk/government/organisations/uk-visas-and-immigration" target="_blank" rel="noopener noreferrer" className="featured-card">
+              <h3>UK Visas & Immigration</h3>
+              <p>Official UKVI guidance and policy</p>
             </a>
-            <a href="https://righttoremain.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>Right to Remain</h3>
-              <p>Immigration toolkit and guidance</p>
+            <a href="https://www.unhcr.org/uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
+              <h3>UNHCR UK</h3>
+              <p>UN Refugee Agency - official guidance</p>
             </a>
           </div>
         </section>

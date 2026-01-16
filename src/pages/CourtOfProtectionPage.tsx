@@ -49,9 +49,9 @@ const RESOURCES = {
     { name: 'Legal Aid Agency', url: 'https://www.gov.uk/government/organisations/legal-aid-agency' },
   ],
   learning: [
-    { name: 'Mental Capacity Law & Policy', url: 'https://www.mentalcapacitylawandpolicy.org.uk/' },
     { name: 'Court of Protection Handbook', url: 'https://www.lawsociety.org.uk/topics/private-client/court-of-protection' },
-    { name: 'Edge Training - MCA Courses', url: 'https://www.edgetraining.org.uk/' },
+    { name: 'SCIE Mental Capacity Resources', url: 'https://www.scie.org.uk/mca' },
+    { name: 'Social Care Institute for Excellence', url: 'https://www.scie.org.uk/' },
   ],
 }
 

@@ -44,7 +44,7 @@ const PRACTICE_AREAS = [
   {
     path: '/immigration',
     name: 'Immigration & Human Rights',
-    description: 'Immigration Rules, asylum, NRPF, human rights, ECHR, tribunals, Free Movement',
+    description: 'Immigration Rules, asylum, NRPF, human rights, ECHR, tribunals, UKVI',
     color: '#0d9488'
   },
   {
@@ -162,23 +162,23 @@ export default function ResourcesPage() {
           </a>
 
           <a
-            href="https://www.mentalhealthlaw.co.uk"
+            href="https://www.gov.uk/government/publications/mental-capacity-act-code-of-practice"
             target="_blank"
             rel="noopener noreferrer"
             className="resource-link-card"
           >
-            <h3>Mental Health Law Online <ExternalLinkIcon /></h3>
-            <p>MHA, MCA, and mental health tribunal resources</p>
+            <h3>MCA Code of Practice <ExternalLinkIcon /></h3>
+            <p>Official Mental Capacity Act statutory guidance</p>
           </a>
 
           <a
-            href="https://england.shelter.org.uk/professional_resources"
+            href="https://www.gov.uk/government/publications/code-of-practice-mental-health-act-1983"
             target="_blank"
             rel="noopener noreferrer"
             className="resource-link-card"
           >
-            <h3>Shelter Legal <ExternalLinkIcon /></h3>
-            <p>Housing law guidance for advisers</p>
+            <h3>MHA Code of Practice <ExternalLinkIcon /></h3>
+            <p>Official Mental Health Act statutory guidance</p>
           </a>
 
           <a
