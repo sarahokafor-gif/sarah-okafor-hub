@@ -122,7 +122,7 @@ export default function LegislationPage() {
 
       <div className="practice-content">
         {/* Free Tools */}
-        <section className="free-tools-section">
+        <section className="free-tools-section legislation-tools">
           <div className="free-tools-content">
             <h2>Free Tools <span className="free-tools-badge">Free</span></h2>
             <p>Create professional court bundles in minutes. Merge PDFs, add page numbers, and generate clickable indexes.</p>

@@ -128,7 +128,7 @@ export default function ProfessionalPage() {
 
       <div className="practice-content">
         {/* Free Tools */}
-        <section className="free-tools-section">
+        <section className="free-tools-section professional-tools">
           <div className="free-tools-content">
             <h2>Free Tools <span className="free-tools-badge">Free</span></h2>
             <p>Create professional court bundles in minutes. Merge PDFs, add page numbers, and generate clickable indexes.</p>
@@ -141,29 +141,6 @@ export default function ProfessionalPage() {
               <line x1="10" y1="14" x2="21" y2="3"/>
             </svg>
           </a>
-        </section>
-
-        {/* Featured */}
-        <section className="featured-section">
-          <h2>Regulatory Bodies</h2>
-          <div className="featured-grid">
-            <a href="https://www.barcouncil.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>Bar Council</h3>
-              <p>Representative body for barristers in England and Wales</p>
-            </a>
-            <a href="https://www.barstandardsboard.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>Bar Standards Board</h3>
-              <p>Independent regulator of barristers</p>
-            </a>
-            <a href="https://www.lawsociety.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>Law Society</h3>
-              <p>Professional body for solicitors</p>
-            </a>
-            <a href="https://www.sra.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>SRA</h3>
-              <p>Solicitors Regulation Authority</p>
-            </a>
-          </div>
         </section>
 
         <div className="feeds-row">
@@ -219,6 +196,29 @@ export default function ProfessionalPage() {
             </div>
           </section>
         </div>
+
+        {/* Featured */}
+        <section className="featured-section">
+          <h2>Regulatory Bodies</h2>
+          <div className="featured-grid">
+            <a href="https://www.barcouncil.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
+              <h3>Bar Council</h3>
+              <p>Representative body for barristers in England and Wales</p>
+            </a>
+            <a href="https://www.barstandardsboard.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
+              <h3>Bar Standards Board</h3>
+              <p>Independent regulator of barristers</p>
+            </a>
+            <a href="https://www.lawsociety.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
+              <h3>Law Society</h3>
+              <p>Professional body for solicitors</p>
+            </a>
+            <a href="https://www.sra.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
+              <h3>SRA</h3>
+              <p>Solicitors Regulation Authority</p>
+            </a>
+          </div>
+        </section>
 
         <div className="resources-grid">
           <section className="resource-section">

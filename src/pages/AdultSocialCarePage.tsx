@@ -151,7 +151,7 @@ export default function AdultSocialCarePage() {
 
       <div className="practice-content">
         {/* Free Tools */}
-        <section className="free-tools-section">
+        <section className="free-tools-section asc-tools">
           <div className="free-tools-content">
             <h2>Free Tools <span className="free-tools-badge">Free</span></h2>
             <p>Create professional court bundles in minutes. Merge PDFs, add page numbers, and generate clickable indexes.</p>
@@ -164,37 +164,6 @@ export default function AdultSocialCarePage() {
               <line x1="10" y1="14" x2="21" y2="3"/>
             </svg>
           </a>
-        </section>
-
-        {/* Featured Resources */}
-        <section className="featured-section">
-          <h2>Key Organisations</h2>
-          <div className="featured-grid">
-            <a href="https://www.scie.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>SCIE</h3>
-              <p>Social Care Institute for Excellence - leading improvement agency</p>
-            </a>
-            <a href="https://www.skillsforcare.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>Skills for Care</h3>
-              <p>Workforce development and training resources</p>
-            </a>
-            <a href="https://www.basw.co.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>BASW</h3>
-              <p>British Association of Social Workers</p>
-            </a>
-            <a href="https://www.cqc.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>CQC</h3>
-              <p>Care Quality Commission - independent regulator</p>
-            </a>
-            <a href="https://www.adass.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>ADASS</h3>
-              <p>Association of Directors of Adult Social Services</p>
-            </a>
-            <a href="https://www.researchinpractice.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>Research in Practice</h3>
-              <p>Evidence-informed resources for practitioners</p>
-            </a>
-          </div>
         </section>
 
         <div className="feeds-row">

@@ -30,7 +30,7 @@
 .immigration-header { background: linear-gradient(135deg, #3d2d5a 0%, #6b4a8c 100%); }
 .public-header { background: linear-gradient(135deg, #2d4a5a 0%, #4a7a8c 100%); }
 .professional-header { background: linear-gradient(135deg, #4a4a4a 0%, #6a6a6a 100%); }
-.legislation-header { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d4a 100%); }
+.legislation-header { background: linear-gradient(135deg, #3d3d5c 0%, #5a5a7a 100%); }
 .chancery-header { background: linear-gradient(135deg, #4a3d2d 0%, #7a6b4a 100%); }
 
 .practice-content {
@@ -315,6 +315,16 @@
   gap: 2rem;
   flex-wrap: wrap;
 }
+
+/* Page-specific Free Tools colors (lighter shades matching headers) */
+.free-tools-section.cop-tools { background: linear-gradient(135deg, #2d5a87 0%, #3d7ab0 100%); }
+.free-tools-section.asc-tools { background: linear-gradient(135deg, #4a8c5f 0%, #5fa87a 100%); }
+.free-tools-section.private-tools { background: linear-gradient(135deg, #8c6b4a 0%, #a88c6b 100%); }
+.free-tools-section.family-tools { background: linear-gradient(135deg, #8c4a7a 0%, #a86b9a 100%); }
+.free-tools-section.immigration-tools { background: linear-gradient(135deg, #6b4a8c 0%, #8c6ba8 100%); }
+.free-tools-section.public-tools { background: linear-gradient(135deg, #4a7a8c 0%, #6b9aa8 100%); }
+.free-tools-section.professional-tools { background: linear-gradient(135deg, #6a6a6a 0%, #8a8a8a 100%); }
+.free-tools-section.legislation-tools { background: linear-gradient(135deg, #5a5a7a 0%, #7a7a9a 100%); }
 
 .free-tools-content {
   flex: 1;

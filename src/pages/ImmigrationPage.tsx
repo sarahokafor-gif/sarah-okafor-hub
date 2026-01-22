@@ -133,7 +133,7 @@ export default function ImmigrationPage() {
 
       <div className="practice-content">
         {/* Free Tools */}
-        <section className="free-tools-section">
+        <section className="free-tools-section immigration-tools">
           <div className="free-tools-content">
             <h2>Free Tools <span className="free-tools-badge">Free</span></h2>
             <p>Create professional court bundles in minutes. Merge PDFs, add page numbers, and generate clickable indexes.</p>
@@ -146,29 +146,6 @@ export default function ImmigrationPage() {
               <line x1="10" y1="14" x2="21" y2="3"/>
             </svg>
           </a>
-        </section>
-
-        {/* Featured */}
-        <section className="featured-section">
-          <h2>Key Resources</h2>
-          <div className="featured-grid">
-            <a href="https://www.gov.uk/browse/visas-immigration" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>GOV.UK Immigration</h3>
-              <p>Official UK government immigration guidance</p>
-            </a>
-            <a href="https://www.nrpfnetwork.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>NRPF Network</h3>
-              <p>No Recourse to Public Funds guidance for LAs</p>
-            </a>
-            <a href="https://www.gov.uk/government/organisations/uk-visas-and-immigration" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>UK Visas & Immigration</h3>
-              <p>Official UKVI guidance and policy</p>
-            </a>
-            <a href="https://www.unhcr.org/uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
-              <h3>UNHCR UK</h3>
-              <p>UN Refugee Agency - official guidance</p>
-            </a>
-          </div>
         </section>
 
         <div className="feeds-row">
@@ -224,6 +201,29 @@ export default function ImmigrationPage() {
             </div>
           </section>
         </div>
+
+        {/* Featured */}
+        <section className="featured-section">
+          <h2>Key Resources</h2>
+          <div className="featured-grid">
+            <a href="https://www.gov.uk/browse/visas-immigration" target="_blank" rel="noopener noreferrer" className="featured-card">
+              <h3>GOV.UK Immigration</h3>
+              <p>Official UK government immigration guidance</p>
+            </a>
+            <a href="https://www.nrpfnetwork.org.uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
+              <h3>NRPF Network</h3>
+              <p>No Recourse to Public Funds guidance for LAs</p>
+            </a>
+            <a href="https://www.gov.uk/government/organisations/uk-visas-and-immigration" target="_blank" rel="noopener noreferrer" className="featured-card">
+              <h3>UK Visas & Immigration</h3>
+              <p>Official UKVI guidance and policy</p>
+            </a>
+            <a href="https://www.unhcr.org/uk/" target="_blank" rel="noopener noreferrer" className="featured-card">
+              <h3>UNHCR UK</h3>
+              <p>UN Refugee Agency - official guidance</p>
+            </a>
+          </div>
+        </section>
 
         <div className="resources-grid">
           <section className="resource-section">
