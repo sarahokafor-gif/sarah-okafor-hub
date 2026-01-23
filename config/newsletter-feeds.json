@@ -1,0 +1,397 @@
+{
+  "newsletters": [
+    {
+      "id": "court-of-protection",
+      "name": "Court of Protection",
+      "shortName": "CoP",
+      "description": "Mental Capacity Act 2005, deprivation of liberty, capacity assessments, best interests decisions",
+      "color": "#1e3a5f",
+      "topics": [
+        "MCA 2005 key provisions",
+        "DoLS and LPS updates",
+        "Capacity assessment guidance",
+        "Best interests checklist",
+        "Recent case law"
+      ],
+      "feeds": {
+        "caseLaw": [
+          {
+            "name": "Court of Protection",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWCOP.rss"
+          },
+          {
+            "name": "Court of Appeal (Civil)",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWCA_Civ.rss"
+          }
+        ],
+        "news": [
+          {
+            "name": "OPG Blog",
+            "url": "https://publicguardian.blog.gov.uk/feed/"
+          }
+        ]
+      },
+      "staticContent": {
+        "keyLegislation": [
+          "Mental Capacity Act 2005",
+          "Mental Capacity Act 2005 Code of Practice",
+          "Court of Protection Rules 2017",
+          "Deprivation of Liberty Safeguards (DoLS)"
+        ],
+        "resources": [
+          "legislation.gov.uk - Mental Capacity Act 2005",
+          "GOV.UK - MCA Code of Practice",
+          "GOV.UK - Court of Protection Forms",
+          "BAILII - EWCOP case law",
+          "39 Essex Chambers - Mental Capacity Law Newsletter"
+        ]
+      }
+    },
+    {
+      "id": "adult-social-care",
+      "name": "Adult Social Care",
+      "shortName": "ASC",
+      "description": "Care Act 2014, section 117 aftercare, safeguarding adults, ordinary residence, charging",
+      "color": "#2d5a3d",
+      "topics": [
+        "Care Act duties",
+        "Section 117 aftercare",
+        "Safeguarding framework",
+        "Ordinary residence",
+        "Charging guidance"
+      ],
+      "feeds": {
+        "caseLaw": [
+          {
+            "name": "Administrative Court",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWHC_Admin.rss"
+          },
+          {
+            "name": "Court of Appeal (Civil)",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWCA_Civ.rss"
+          }
+        ],
+        "news": [
+          {
+            "name": "DHSC Blog",
+            "url": "https://healthmedia.blog.gov.uk/feed/"
+          }
+        ]
+      },
+      "staticContent": {
+        "keyLegislation": [
+          "Care Act 2014",
+          "Care and Support Statutory Guidance",
+          "Mental Health Act 1983 (s.117)",
+          "Care and Support (Charging) Regulations 2014"
+        ],
+        "resources": [
+          "legislation.gov.uk - Care Act 2014",
+          "GOV.UK - Care and Support Statutory Guidance",
+          "SCIE - Social Care Institute for Excellence",
+          "Skills for Care - Workforce development",
+          "ADASS - Association of Directors of Adult Social Services"
+        ]
+      }
+    },
+    {
+      "id": "family-law",
+      "name": "Family Law",
+      "shortName": "Family",
+      "description": "Children Act 1989, private and public law proceedings, financial remedies, domestic abuse",
+      "color": "#7c3aed",
+      "topics": [
+        "Children Act welfare checklist",
+        "Public law outline",
+        "Financial remedies",
+        "Domestic Abuse Act 2021",
+        "Recent case law"
+      ],
+      "feeds": {
+        "caseLaw": [
+          {
+            "name": "Family Division",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWHC_Fam.rss"
+          },
+          {
+            "name": "Family Court",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWFC.rss"
+          },
+          {
+            "name": "Court of Appeal (Civil)",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWCA_Civ.rss"
+          }
+        ],
+        "news": [
+          {
+            "name": "Judiciary News",
+            "url": "https://www.judiciary.uk/feed/"
+          }
+        ]
+      },
+      "staticContent": {
+        "keyLegislation": [
+          "Children Act 1989",
+          "Domestic Abuse Act 2021",
+          "Matrimonial Causes Act 1973",
+          "Family Procedure Rules 2010"
+        ],
+        "resources": [
+          "legislation.gov.uk - Children Act 1989",
+          "GOV.UK - Family Court forms",
+          "CAFCASS - Children and Family Court Advisory Service",
+          "Family Justice Council Guidance",
+          "Resolution - Family Law practitioners"
+        ]
+      }
+    },
+    {
+      "id": "private-client",
+      "name": "Private Client & Chancery",
+      "shortName": "Private",
+      "description": "Wills and probate, trusts, Lasting Powers of Attorney, estate administration, inheritance",
+      "color": "#5a3d2d",
+      "topics": [
+        "LPA requirements",
+        "Probate procedure",
+        "Trust fundamentals",
+        "Inheritance Act claims",
+        "Estate administration"
+      ],
+      "feeds": {
+        "caseLaw": [
+          {
+            "name": "Chancery Division",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWHC_Ch.rss"
+          },
+          {
+            "name": "Court of Appeal (Civil)",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWCA_Civ.rss"
+          },
+          {
+            "name": "Supreme Court",
+            "url": "https://www.bailii.org/rss/recent-accessions-uk_cases_UKSC.rss"
+          }
+        ],
+        "news": [
+          {
+            "name": "OPG Blog",
+            "url": "https://publicguardian.blog.gov.uk/feed/"
+          }
+        ]
+      },
+      "staticContent": {
+        "keyLegislation": [
+          "Wills Act 1837",
+          "Inheritance (Provision for Family and Dependants) Act 1975",
+          "Trustee Act 2000",
+          "Mental Capacity Act 2005 (LPAs)"
+        ],
+        "resources": [
+          "GOV.UK - Office of the Public Guardian",
+          "GOV.UK - Probate application forms",
+          "STEP - Society of Trust and Estate Practitioners",
+          "Law Society - Wills and inheritance guidance",
+          "HMRC - Inheritance Tax guidance"
+        ]
+      }
+    },
+    {
+      "id": "immigration",
+      "name": "Immigration & Human Rights",
+      "shortName": "Immigration",
+      "description": "Immigration Rules, asylum claims, human rights, NRPF, deportation and removal",
+      "color": "#0d9488",
+      "topics": [
+        "Immigration Rules changes",
+        "Asylum process",
+        "Human rights claims",
+        "NRPF duties",
+        "Recent tribunal decisions"
+      ],
+      "feeds": {
+        "caseLaw": [
+          {
+            "name": "Upper Tribunal (IAC)",
+            "url": "https://www.bailii.org/rss/recent-accessions-uk_cases_UKUT_IAC.rss"
+          },
+          {
+            "name": "Court of Appeal (Civil)",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWCA_Civ.rss"
+          },
+          {
+            "name": "Supreme Court",
+            "url": "https://www.bailii.org/rss/recent-accessions-uk_cases_UKSC.rss"
+          }
+        ],
+        "news": [
+          {
+            "name": "Home Office Blog",
+            "url": "https://homeofficemedia.blog.gov.uk/feed/"
+          }
+        ]
+      },
+      "staticContent": {
+        "keyLegislation": [
+          "Immigration Act 1971",
+          "Immigration Rules (HC 395)",
+          "Nationality and Borders Act 2022",
+          "Human Rights Act 1998"
+        ],
+        "resources": [
+          "GOV.UK - Immigration Rules",
+          "UNHCR - Refugee Convention guidance",
+          "NRPF Network - Local authority guidance",
+          "Free Movement - Immigration law updates",
+          "ILPA - Immigration Law Practitioners' Association"
+        ]
+      }
+    },
+    {
+      "id": "public-law",
+      "name": "Public Law & Judicial Review",
+      "shortName": "Public Law",
+      "description": "Judicial review procedure, local authority duties, human rights challenges, ombudsman",
+      "color": "#dc2626",
+      "topics": [
+        "JR grounds and procedure",
+        "Permission stage",
+        "Local authority duties",
+        "Human Rights Act",
+        "Recent JR cases"
+      ],
+      "feeds": {
+        "caseLaw": [
+          {
+            "name": "Administrative Court",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWHC_Admin.rss"
+          },
+          {
+            "name": "Court of Appeal (Civil)",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWCA_Civ.rss"
+          },
+          {
+            "name": "Supreme Court",
+            "url": "https://www.bailii.org/rss/recent-accessions-uk_cases_UKSC.rss"
+          }
+        ],
+        "news": [
+          {
+            "name": "MoJ Blog",
+            "url": "https://mojdigital.blog.gov.uk/feed/"
+          }
+        ]
+      },
+      "staticContent": {
+        "keyLegislation": [
+          "Human Rights Act 1998",
+          "Civil Procedure Rules Part 54",
+          "Senior Courts Act 1981",
+          "Equality Act 2010"
+        ],
+        "resources": [
+          "BAILII - Administrative Court decisions",
+          "Judiciary.uk - Judicial review guidance",
+          "GOV.UK - Pre-action protocol for JR",
+          "UK Human Rights Blog",
+          "Public Law Project - JR resources"
+        ]
+      }
+    },
+    {
+      "id": "professional",
+      "name": "Professional Development",
+      "shortName": "CPD",
+      "description": "Bar Standards Board, SRA updates, CPD requirements, pro bono, wellbeing and practice management",
+      "color": "#6366f1",
+      "topics": [
+        "BSB regulatory updates",
+        "SRA guidance",
+        "CPD requirements",
+        "Pro bono opportunities",
+        "Practice management"
+      ],
+      "feeds": {
+        "caseLaw": [
+          {
+            "name": "Administrative Court",
+            "url": "https://www.bailii.org/rss/recent-accessions-ew_cases_EWHC_Admin.rss"
+          }
+        ],
+        "news": [
+          {
+            "name": "LAA Blog",
+            "url": "https://legalaid.blog.gov.uk/feed/"
+          },
+          {
+            "name": "Judiciary News",
+            "url": "https://www.judiciary.uk/feed/"
+          }
+        ]
+      },
+      "staticContent": {
+        "keyLegislation": [
+          "Legal Services Act 2007",
+          "BSB Handbook",
+          "SRA Standards and Regulations",
+          "Legal Aid, Sentencing and Punishment of Offenders Act 2012"
+        ],
+        "resources": [
+          "Bar Standards Board - Handbook and guidance",
+          "Solicitors Regulation Authority",
+          "Legal Aid Agency",
+          "LawWorks - Pro bono opportunities",
+          "Wellbeing at the Bar"
+        ]
+      }
+    },
+    {
+      "id": "legislation",
+      "name": "Legislation & Parliament",
+      "shortName": "Legislation",
+      "description": "Bills tracking, Statutory Instruments, Law Commission projects, Parliamentary committees",
+      "color": "#059669",
+      "topics": [
+        "Current Bills in Parliament",
+        "Recent Statutory Instruments",
+        "Law Commission projects",
+        "Committee reports",
+        "Commencement orders"
+      ],
+      "feeds": {
+        "caseLaw": [],
+        "news": [
+          {
+            "name": "New Legislation UK",
+            "url": "https://www.legislation.gov.uk/new/data.feed"
+          },
+          {
+            "name": "UK Parliament News",
+            "url": "https://www.parliament.uk/rss/news.rss"
+          }
+        ]
+      },
+      "staticContent": {
+        "keyLegislation": [
+          "Interpretation Act 1978",
+          "Human Rights Act 1998",
+          "European Union (Withdrawal) Act 2018"
+        ],
+        "resources": [
+          "legislation.gov.uk - All UK legislation",
+          "Parliament.uk - Bills before Parliament",
+          "Law Commission - Reform projects",
+          "Hansard - Parliamentary debates",
+          "GOV.UK - Statutory Instruments"
+        ]
+      }
+    }
+  ],
+  "settings": {
+    "rss2jsonApi": "https://api.rss2json.com/v1/api.json?rss_url=",
+    "feedTimeout": 10,
+    "maxItemsPerFeed": 5,
+    "outputDir": "public/newsletters",
+    "filenamePattern": "{id}-Legal-Update-Week-{week}-{year}.pdf"
+  }
+}

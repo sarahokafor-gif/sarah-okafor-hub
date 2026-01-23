@@ -35,6 +35,7 @@ sarah-okafor-hub/
 │   └── pages/               # Route pages
 │       ├── HomePage.tsx
 │       ├── ResourcesPage.tsx
+│       ├── NewslettersPage.tsx  # Weekly PDF newsletters
 │       ├── CourtOfProtectionPage.tsx
 │       ├── AdultSocialCarePage.tsx
 │       ├── FamilyLawPage.tsx
@@ -44,7 +45,15 @@ sarah-okafor-hub/
 │       ├── ProfessionalPage.tsx
 │       ├── LegislationPage.tsx
 │       └── [Other pages]
-├── public/                  # Static assets
+├── config/
+│   └── newsletter-feeds.json    # Newsletter configuration
+├── scripts/
+│   └── generate-newsletters.py  # PDF generator script
+├── .github/workflows/
+│   └── generate-newsletters.yml # Weekly automation
+├── public/
+│   └── newsletters/             # Generated PDF files
+├── requirements.txt         # Python dependencies
 ├── package.json
 ├── vite.config.ts
 ├── tsconfig.json
@@ -342,3 +351,90 @@ npm run build
 1. Check Cloudflare Pages dashboard for build logs
 2. Ensure `npm run build` succeeds locally
 3. Verify `dist` folder is generated correctly
+
+## Weekly Newsletter System
+
+The site generates weekly PDF newsletters for 8 practice areas with dynamic RSS content.
+
+### Newsletters (8 Practice Areas)
+
+| Newsletter | ID | Color |
+|------------|-----|-------|
+| Court of Protection | `court-of-protection` | #1e3a5f |
+| Adult Social Care | `adult-social-care` | #2d5a3d |
+| Family Law | `family-law` | #7c3aed |
+| Private Client & Chancery | `private-client` | #5a3d2d |
+| Immigration & Human Rights | `immigration` | #0d9488 |
+| Public Law & Judicial Review | `public-law` | #dc2626 |
+| Professional Development | `professional` | #6366f1 |
+| Legislation & Parliament | `legislation` | #059669 |
+
+### PDF Naming Convention
+
+```
+[Area]-Legal-Update-Week-[WW]-[YYYY].pdf
+```
+
+Example: `Court-of-Protection-Legal-Update-Week-4-2026.pdf`
+
+### Configuration
+
+All newsletter settings are in `config/newsletter-feeds.json`:
+- Feed URLs (case law + news for each area)
+- Colors, titles, descriptions
+- Static content sections (key legislation, resources)
+
+### Generate Newsletters Locally
+
+```bash
+# Create virtual environment (first time only)
+python3 -m venv .venv
+
+# Activate and install dependencies
+source .venv/bin/activate
+pip install -r requirements.txt
+
+# Generate all newsletters
+python scripts/generate-newsletters.py
+```
+
+### GitHub Actions Automation
+
+The workflow `.github/workflows/generate-newsletters.yml`:
+- Runs every Monday at 07:00 UTC
+- Can be triggered manually via GitHub Actions UI
+- Auto-commits new PDFs to the repository
+- Push triggers Cloudflare deployment
+
+### Feed Failure Handling
+
+- Single feed fails → Warning logged, continues
+- All feeds fail for a section → Shows "Unable to fetch" message
+- 10-second timeout per feed
+- Newsletter still generates with available content
+
+### Adding a New Newsletter
+
+1. Add entry to `config/newsletter-feeds.json`:
+```json
+{
+  "id": "new-area",
+  "name": "New Practice Area",
+  "shortName": "New",
+  "description": "...",
+  "color": "#hexcolor",
+  "topics": ["Topic 1", "Topic 2"],
+  "feeds": {
+    "caseLaw": [{ "name": "...", "url": "..." }],
+    "news": [{ "name": "...", "url": "..." }]
+  },
+  "staticContent": {
+    "keyLegislation": ["..."],
+    "resources": ["..."]
+  }
+}
+```
+
+2. Add to `NEWSLETTERS` array in `src/pages/NewslettersPage.tsx`
+
+3. Run `python scripts/generate-newsletters.py` to test

@@ -1,0 +1,5 @@
+# Python dependencies for newsletter generation
+# Install with: pip install -r requirements.txt
+
+reportlab>=4.0.0
+requests>=2.31.0
