@@ -150,7 +150,7 @@ def create_header_table(title, subtitle, color):
 
 def generate_cop_newsletter():
     """Generate Court of Protection newsletter."""
-    filename = os.path.join(OUTPUT_DIR, "Court-of-Protection-Legal-Update-January-2026.pdf")
+    filename = os.path.join(OUTPUT_DIR, "Court-of-Protection-Legal-Update-Week-4-2026.pdf")
     doc = SimpleDocTemplate(filename, pagesize=A4,
                            rightMargin=0.75*inch, leftMargin=0.75*inch,
                            topMargin=0.75*inch, bottomMargin=0.75*inch)
@@ -161,7 +161,7 @@ def generate_cop_newsletter():
     # Header
     story.append(create_header_table(
         "Court of Protection",
-        "Legal Update | January 2026",
+        "Legal Update | Week 4, 2026",
         "#1e3a5f"
     ))
     story.append(Spacer(1, 20))
@@ -294,7 +294,7 @@ def generate_cop_newsletter():
         styles['Footer']
     ))
     story.append(Paragraph(
-        "Prepared by Sarah Okafor, Barrister | Chambers of Sarah Okafor | January 2026",
+        "Prepared by Sarah Okafor, Barrister | Chambers of Sarah Okafor | Week 4, 2026",
         styles['Footer']
     ))
 
@@ -304,7 +304,7 @@ def generate_cop_newsletter():
 
 def generate_asc_newsletter():
     """Generate Adult Social Care newsletter."""
-    filename = os.path.join(OUTPUT_DIR, "Adult-Social-Care-Legal-Update-January-2026.pdf")
+    filename = os.path.join(OUTPUT_DIR, "Adult-Social-Care-Legal-Update-Week-4-2026.pdf")
     doc = SimpleDocTemplate(filename, pagesize=A4,
                            rightMargin=0.75*inch, leftMargin=0.75*inch,
                            topMargin=0.75*inch, bottomMargin=0.75*inch)
@@ -315,7 +315,7 @@ def generate_asc_newsletter():
     # Header
     story.append(create_header_table(
         "Adult Social Care",
-        "Legal Update | January 2026",
+        "Legal Update | Week 4, 2026",
         "#2d5a3d"
     ))
     story.append(Spacer(1, 20))
@@ -426,7 +426,7 @@ def generate_asc_newsletter():
         styles['Footer']
     ))
     story.append(Paragraph(
-        "Prepared by Sarah Okafor, Barrister | Chambers of Sarah Okafor | January 2026",
+        "Prepared by Sarah Okafor, Barrister | Chambers of Sarah Okafor | Week 4, 2026",
         styles['Footer']
     ))
 
@@ -436,7 +436,7 @@ def generate_asc_newsletter():
 
 def generate_family_newsletter():
     """Generate Family Law newsletter."""
-    filename = os.path.join(OUTPUT_DIR, "Family-Law-Legal-Update-January-2026.pdf")
+    filename = os.path.join(OUTPUT_DIR, "Family-Law-Legal-Update-Week-4-2026.pdf")
     doc = SimpleDocTemplate(filename, pagesize=A4,
                            rightMargin=0.75*inch, leftMargin=0.75*inch,
                            topMargin=0.75*inch, bottomMargin=0.75*inch)
@@ -447,7 +447,7 @@ def generate_family_newsletter():
     # Header
     story.append(create_header_table(
         "Family Law",
-        "Legal Update | January 2026",
+        "Legal Update | Week 4, 2026",
         "#7c3aed"
     ))
     story.append(Spacer(1, 20))
@@ -534,7 +534,7 @@ def generate_family_newsletter():
         styles['Footer']
     ))
     story.append(Paragraph(
-        "Prepared by Sarah Okafor, Barrister | Chambers of Sarah Okafor | January 2026",
+        "Prepared by Sarah Okafor, Barrister | Chambers of Sarah Okafor | Week 4, 2026",
         styles['Footer']
     ))
 
@@ -544,7 +544,7 @@ def generate_family_newsletter():
 
 def generate_private_client_newsletter():
     """Generate Private Client newsletter."""
-    filename = os.path.join(OUTPUT_DIR, "Private-Client-Legal-Update-January-2026.pdf")
+    filename = os.path.join(OUTPUT_DIR, "Private-Client-Legal-Update-Week-4-2026.pdf")
     doc = SimpleDocTemplate(filename, pagesize=A4,
                            rightMargin=0.75*inch, leftMargin=0.75*inch,
                            topMargin=0.75*inch, bottomMargin=0.75*inch)
@@ -555,7 +555,7 @@ def generate_private_client_newsletter():
     # Header
     story.append(create_header_table(
         "Private Client & Chancery",
-        "Legal Update | January 2026",
+        "Legal Update | Week 4, 2026",
         "#5a3d2d"
     ))
     story.append(Spacer(1, 20))
@@ -640,7 +640,7 @@ def generate_private_client_newsletter():
         styles['Footer']
     ))
     story.append(Paragraph(
-        "Prepared by Sarah Okafor, Barrister | Chambers of Sarah Okafor | January 2026",
+        "Prepared by Sarah Okafor, Barrister | Chambers of Sarah Okafor | Week 4, 2026",
         styles['Footer']
     ))
 
@@ -650,7 +650,7 @@ def generate_private_client_newsletter():
 
 def generate_immigration_newsletter():
     """Generate Immigration newsletter."""
-    filename = os.path.join(OUTPUT_DIR, "Immigration-Legal-Update-January-2026.pdf")
+    filename = os.path.join(OUTPUT_DIR, "Immigration-Legal-Update-Week-4-2026.pdf")
     doc = SimpleDocTemplate(filename, pagesize=A4,
                            rightMargin=0.75*inch, leftMargin=0.75*inch,
                            topMargin=0.75*inch, bottomMargin=0.75*inch)
@@ -661,7 +661,7 @@ def generate_immigration_newsletter():
     # Header
     story.append(create_header_table(
         "Immigration & Human Rights",
-        "Legal Update | January 2026",
+        "Legal Update | Week 4, 2026",
         "#0d9488"
     ))
     story.append(Spacer(1, 20))
@@ -741,7 +741,7 @@ def generate_immigration_newsletter():
         styles['Footer']
     ))
     story.append(Paragraph(
-        "Prepared by Sarah Okafor, Barrister | Chambers of Sarah Okafor | January 2026",
+        "Prepared by Sarah Okafor, Barrister | Chambers of Sarah Okafor | Week 4, 2026",
         styles['Footer']
     ))
 
@@ -751,7 +751,7 @@ def generate_immigration_newsletter():
 
 def generate_public_law_newsletter():
     """Generate Public Law newsletter."""
-    filename = os.path.join(OUTPUT_DIR, "Public-Law-Legal-Update-January-2026.pdf")
+    filename = os.path.join(OUTPUT_DIR, "Public-Law-Legal-Update-Week-4-2026.pdf")
     doc = SimpleDocTemplate(filename, pagesize=A4,
                            rightMargin=0.75*inch, leftMargin=0.75*inch,
                            topMargin=0.75*inch, bottomMargin=0.75*inch)
@@ -762,7 +762,7 @@ def generate_public_law_newsletter():
     # Header
     story.append(create_header_table(
         "Public Law & Judicial Review",
-        "Legal Update | January 2026",
+        "Legal Update | Week 4, 2026",
         "#dc2626"
     ))
     story.append(Spacer(1, 20))
@@ -855,7 +855,7 @@ def generate_public_law_newsletter():
         styles['Footer']
     ))
     story.append(Paragraph(
-        "Prepared by Sarah Okafor, Barrister | Chambers of Sarah Okafor | January 2026",
+        "Prepared by Sarah Okafor, Barrister | Chambers of Sarah Okafor | Week 4, 2026",
         styles['Footer']
     ))
 
