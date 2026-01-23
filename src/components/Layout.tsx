@@ -106,6 +106,7 @@ export default function Layout() {
               )}
             </div>
             <Link to="/resources" className={isActive('/resources') ? 'active' : ''}>Resources</Link>
+            <Link to="/newsletters" className={isActive('/newsletters') ? 'active' : ''}>Updates</Link>
             <Link to="/blog" className={isActive('/blog') ? 'active' : ''}>Blog</Link>
             <Link to="/about" className={isActive('/about') ? 'active' : ''}>About</Link>
             <Link to="/contact" className={isActive('/contact') ? 'active' : ''}>Contact</Link>
@@ -139,6 +140,7 @@ export default function Layout() {
           ))}
         </div>
         <Link to="/resources" className={isActive('/resources') ? 'active' : ''}>Resources</Link>
+        <Link to="/newsletters" className={isActive('/newsletters') ? 'active' : ''}>Updates</Link>
         <Link to="/blog" className={isActive('/blog') ? 'active' : ''}>Blog</Link>
         <Link to="/about" className={isActive('/about') ? 'active' : ''}>About</Link>
         <Link to="/contact" className={isActive('/contact') ? 'active' : ''}>Contact</Link>

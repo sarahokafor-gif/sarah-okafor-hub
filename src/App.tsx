@@ -7,6 +7,7 @@ import ResourcesPage from './pages/ResourcesPage'
 import BlogPage from './pages/BlogPage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
+import NewslettersPage from './pages/NewslettersPage'
 // Practice Area Pages
 import CourtOfProtectionPage from './pages/CourtOfProtectionPage'
 import AdultSocialCarePage from './pages/AdultSocialCarePage'
@@ -26,6 +27,7 @@ function App() {
           <Route path="tools" element={<ToolsPage />} />
           <Route path="resources" element={<ResourcesPage />} />
           <Route path="blog" element={<BlogPage />} />
+          <Route path="newsletters" element={<NewslettersPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
           {/* Practice Area Routes */}
