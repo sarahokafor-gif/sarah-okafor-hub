@@ -1,0 +1,4 @@
+# Ensure PDFs are served with correct content type
+/newsletters/*.pdf
+  Content-Type: application/pdf
+  Content-Disposition: attachment
